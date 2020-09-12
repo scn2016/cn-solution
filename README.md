@@ -79,10 +79,12 @@ helm package my-nginx-controller
 3. Create the Required entities in the spinnaker like application, pipeline add artifact account and add your k8's cluster with service account
 
 4. Pipeline consists of the 3 stages
- **4.1 configuration **:- It required the Expected artefact package and values.yaml 
- **4.2 Bake Manifest **:- You need to select the rendering template with expected artefact and also you have to produces artefact 
- with base64 encoded format
- **4.3 Deploy Manifest** :- In the 3rd stage you need to select your configured k8's account need to give the source of the artifact from the last stage which needs to be deploy. 
+ ##4.1 configuration :-
+   It required the Expected artefact package and values.yaml 
+ ##4.2 Bake Manifest :- 
+   You need to select the rendering template with expected artefact and also you have to produces artefact with base64 encoded format
+ ##4.3 Deploy Manifest:- 
+   In the 3rd stage you need to select your configured k8's account need to give the source of the artifact from the last stage which needs to be deploy. 
 
 ## Application url can be registered for any domain and can be accessed
 
