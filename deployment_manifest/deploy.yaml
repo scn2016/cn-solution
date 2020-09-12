@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: node-js
+  name: node-js
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-js
+  template:
+    metadata:
+      labels:
+        app: node-js
+    spec:
+      containers:
+      - image: shyam2017/nodejs-sample-app:test-nodejs
+        name: test-nodejs
+        resources:
+          requests:
+            cpu: "0.3"
+            memory: "300Mi"
+          limits:
+            cpu: "0.5"
+            memory: "500Mi"
