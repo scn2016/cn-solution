@@ -13,5 +13,3 @@ spec:
   selector:
     app: node-js
   type: ClusterIP
-#status:
-#  loadBalancer: {}
