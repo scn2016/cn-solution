@@ -74,7 +74,7 @@ To Create the Automation of the entire pipeline with Spinnaker and deploy the he
 
 2. Clone Nginx stable repo from helm chart and Create package with given command and store the packgaes in the any object storage like S3 or GCS 
 
-helm package my-nginx-controller
+* helm package my-nginx-controller
 
 3. Create the Required entities in the spinnaker like application, pipeline add artifact account and add your k8's cluster with service account
 
