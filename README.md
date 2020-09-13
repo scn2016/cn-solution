@@ -20,10 +20,10 @@ Creates an EKS Cluster on the AWS by using the given terraform code.
   	2. helm repo update && helm repo list
   	3. helm install my-release bitnami/kube-prometheus -n prometheus 
   	4. add entry in to the ingress or use the port-forward with k8's to check it locally.
-  	   kubectl port-forward --namespace prometheus svc/my-release-kube-prometheus-prometheus 9090:9090
+  	   * kubectl port-forward --namespace prometheus svc/my-release-kube-prometheus-prometheus 9090:9090
   	5. helm install my-release bitnami/grafana 
   	6. add entry in to the ingress or use the port-forward with k8's to check it locally.
-   	   kubectl port-forward --namespace prometheus svc/my-release-grafana-grafana 3000:3000
+   	   * kubectl port-forward --namespace prometheus svc/my-release-grafana-grafana 3000:3000
 
 ## Pre Requisites
 
