@@ -269,7 +269,7 @@ controller:
     externalIPs: []
 
     loadBalancerIP: ""
-    loadBalancerSourceRanges: []
+    loadBalancerSourceRanges: [49.207.202.157/32]
 
     enableHttp: true
     enableHttps: true
